@@ -6,7 +6,20 @@
     <title>XinChao</title>
 </head>
 <body>
-    Noi dung edit
-    noidungabc
+    <h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1> <br> <br>
+    <button  style="position:absolute; left:285px; top:235px;" type="button" id="yes" onclick="yes()">yes</button>
+    <button type="button" id="button" onmouseover="noOver()"
+        style="position:absolute; left:360px; top:235px;">No</button>
+    <script>
+        function yes(){
+            alert("yes, i love you too")
+        }
+        function noOver() {
+            let x = Math.floor(Math.random() * window.innerWidth);
+            let y = Math.floor(Math.random() * window.innerHeight);
+            document.getElementById("button").style.left = x + `px`
+            document.getElementById("button").style.top = y + `px`
+        }
+    </script>
 </body>
 </html>
