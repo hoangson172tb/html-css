@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XinChao</title>
+    <title>hello</title>
 </head>
 <body>
-    <ul style="list-style-type: circle;">
-        <li>HN</li>
-        <a href="ddd.com"><li>ss</li></a>
-    </ul>
-    <a href="24h.com" target="_blank"><img width="150px" height="150px" src="./img/305741753_480221484122817_8943041360483840789_n.png" alt="Error load"></a>
-    <audio controls> <source src=""></audio>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sQlQpKpQOpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1> <br> <br>
+    <button  style="position:absolute; left:285px; top:235px;" type="button" id="yes" onclick="yes()">yes</button>
+    <button type="button" id="button" onmouseover="noOver()"
+        style="position:absolute; left:360px; top:235px;">No</button>
+    <script>
+        function yes(){
+            alert("yes, i love you too")
+        }
+        function noOver() {
+            let x = Math.floor(Math.random() * window.innerWidth);
+            let y = Math.floor(Math.random() * window.innerHeight);
+            document.getElementById("button").style.left = x + `px`
+            document.getElementById("button").style.top = y + `px`
+        }
+        
+    </script>
 </body>
 </html>
